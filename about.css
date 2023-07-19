@@ -1,0 +1,79 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Capriola&family=Roboto:wght@400;500;700;900&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Cairo', sans-serif;
+font-family: 'Capriola', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+}
+:root{
+    --red:#eb1529;
+    --blue: rgb(0, 117, 117)
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+}
+.cartadrs{
+      background-image: url(img/about/banner.png);
+    width: 100%;
+    height: 400px;
+            background-position: top center;
+color: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+
+
+.dad1{
+    width: 85%;
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.dad1 img{
+ width: 45%;
+ height: 40%;
+}
+
+ @media screen and (max-width: 1200px){
+     .dad1 img{
+    width: 90%;
+    }
+
+ }
+
+
+ @media screen and (max-width: 890px){
+    video{
+        height: 100% !important;
+         width: 90% !important;
+    }
+}
+@media screen and (max-width: 600px){
+    .down{
+        font-size: 40px !important;
+    }
+}
+@media screen and (max-width: 380px){
+    .down{
+        font-size: 32px !important;
+    }
+}

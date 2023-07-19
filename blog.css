@@ -1,0 +1,121 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Capriola&family=Roboto:wght@400;500;700;900&family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Cairo', sans-serif;
+font-family: 'Capriola', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+}
+:root{
+    --red:#eb1529;
+    --blue: rgb(0, 117, 117)
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    overflow: hidden;
+
+}
+.dad{
+    padding: 40px;
+}
+
+.cartadrs{
+      background-image: url(img/banner/b19.jpg);
+    width: 100%;
+    height: 400px;
+            background-position: top center;
+color: #fff;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
+.img{
+    width: 500px;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.img1{
+    background-image: url(img/blog/b3.jpg);
+}
+.img2{
+    background-image: url(img/blog/b6.jpg);
+}
+.img3{
+    background-image: url(img/blog/b7.jpg);
+}
+.img4{
+    background-image: url(img/blog/b4.jpg);
+}
+.img5{
+    background-image: url(img/blog/b1.jpg);
+}
+.img6{
+    background-image: url(img/blog/b2.jpg);
+}
+
+
+.timing{
+    position:absolute ;
+     top: -90px;
+     font-size: 90px;
+     font-weight: 600;
+     color: #adabab;
+     z-index: -1;
+
+}
+.dad h5:hover{
+    color: #5a35b1 !important;
+}
+
+.pgs{
+    display: flex;
+    gap: 4px;
+}
+.pgs div{
+width: 40px;
+height: 40px;
+background: var(--blue);
+border-radius: 5px;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+
+ @media screen and (max-width: 730px){
+    .img{
+        width: 400px;
+        height: 200px;
+    }
+ }
+ @media screen and (max-width: 560px){
+    .img{
+        width: 380px;
+        height: 200px;
+    }
+ }
+ @media screen and (max-width: 450px){
+    .img{
+        width: 260px;
+        height: 160px;
+    }
+ }
+

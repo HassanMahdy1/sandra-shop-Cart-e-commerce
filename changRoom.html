@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylechangRoom.css">
+    <link rel="stylesheet" href="styleOfNavfooter.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Capriola&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <title>Changing room</title>
+</head>
+<body>
+<div class="diver">
+  <nav>
+  <div>
+     <a href="index.html"><img style="cursor: pointer;" src="Black and White Clothing Apparel Logo1.png" alt="log" width="130px"></a> 
+  </div>
+
+  <div  class="nvcenter">
+      <a  href="index.html">home</a>
+      <a class="asd" href="changRoom.html">Changing room</a>
+      <a href="blog.html">blog</a>
+      <a href="about.html">about</a>
+      <a href="Contact.html">contact</a>
+      
+  </div>
+
+  <div class="nvend">
+      <a href="log.html"><i class='bx bx-user'></i></a>
+          <div class="search-box">
+              <button class="btn-search"><i class='bx bx-search'></i></button>
+              <input type="text" class="input-search" placeholder="Type to Search...">
+          </div>
+      <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+  </div>
+
+   <!-- menue list -->
+            <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a style="text-transform: uppercase;"  href="index.html">home</a>
+                        <a class="home" style="text-transform: uppercase;" href="changRoom.html">Changing room</a>
+                        <a style="text-transform: uppercase;" href="blog.html">blog</a>
+                        <a style="text-transform: uppercase;" href="about.html">about</a>
+                        <a style="text-transform: uppercase;" href="Contact.html">contact</a>
+                        <div class="nvend2">
+                            <div class="dadball"><div class="ball"></div> <a href="cart.html">CART</a></div>
+                        <a href="log.html">LOGIN</a>
+                <div style="color: #fff;display: flex; gap: 20px;align-items: center; justify-content: center;" class="icons">
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-instagram' ></i>
+                    <i class='bx bxl-pinterest-alt' ></i>
+                    <i class='bx bxl-youtube' ></i>
+                    <i class='bx bxl-whatsapp' ></i>
+                </div>
+            </div>
+            </div>
+        <div style="display: flex;align-items: center; gap: 40px;">
+
+                <div class="dadball" style="font-size: 25px;display: none;" id="carticonresponsive"><div class="ball"></div> <a href="cart.html"><i class='bx bx-shopping-bag' style="color: #000;"></i></a></div>
+                 
+                <span class="burgerlist" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                <script>
+                function openNav() {document.getElementById("mySidenav").style.width = "100%";}
+                function closeNav() {document.getElementById("mySidenav").style.width = "0";}
+                </script>
+            </div>
+
+
+
+  </nav>
+  <div class="model">
+<div class="man card active">
+  <img src="https://res.cloudinary.com/djclvnzg1/image/upload/v1687882867/man_vqnnyq.png" alt="" class="base" id="man">
+  <div class="mask" id="shirt-target">
+    <div class="color-block" id="shirt-color-block"></div>
+  </div>
+  <div class="mask" id="pants-target">
+    <div class="color-block" id="pants-color-block"></div>
+  </div>
+</div>
+<div class="woman card">
+  <img src="https://res.cloudinary.com/djclvnzg1/image/upload/v1687882867/woman_jgkhmi.png" alt="" class="base" id="woman">
+  <div class="mask" id="blouse-target">
+    <div class="color-block" id="blouse-color-block"></div>
+  </div>
+  <div class="mask" id="skirt-target">
+    <div class="color-block" id="skirt-color-block"></div>
+  </div>
+</div>
+<div class="color-1" onclick="this.classList.toggle('active')">
+  +
+  <div class="option preset" data-color="rgb(255,255,255)"></div>
+  <div class="option preset" data-color="rgb(192 193 224)"></div>
+  <div class="option preset" data-color="rgb(163 163 163)"></div>
+  <div class="option picker"><input type="color" id="input-color-shirt" value="#c9c9c9"></div>
+</div>
+<div class="color-2" onclick="this.classList.toggle('active')">
+  +
+  <div class="option preset" data-color="rgb(255,255,255)"></div>
+  <div class="option preset" data-color="rgb(222 222 222)"></div>
+  <div class="option preset" data-color="rgb(224 214 197)"></div>
+  <div class="option picker"><input type="color" id="input-color-pants" value="#c9c9c9"></div>
+</div>
+<div class="gender">
+  <div class="man active">men</div>
+  <div class="woman">women</div>
+</div>
+  </div>
+
+<div id="containerimgs" >
+
+
+<div class="img-zoom-container">
+  <img id="myimage" src="img/newimg/1.jpg" width="500" >
+  <div id="myresult" class="img-zoom-result"></div>
+</div>
+
+
+<div id="sonscontainerimgs">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f1.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/1.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f3.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/2.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/5.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f2.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f4.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f5.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f6.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f7.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/f8.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n1.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n2.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n3.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n4.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n5.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n6.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n7.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/products/n8.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/8.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/10.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/6.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/11.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/13.jpg" alt="">
+  <img onclick="sonimagesrc(this.src)" width="150px" src="img/newimg/15.jpg" alt="">
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="beforeFooter">
+  <div>
+      <h1>sign up for newsletters</h1>
+      <p style="color: #757575;">get E-mail updates about our latest shop and <span style="color: gold;">special offers.</span></p>
+  </div>
+
+      <form action="#" class="formemail">
+          <input type="email" placeholder="Your email address" class="email">
+          <input type="submit" class ='submit'>
+      </form>
+  
+  </div>
+  <footer>
+      <div class="footerdad">
+      <div class="footercol">
+      <img style="width: 150px; padding: 0 0 30px 0;" src="Black and White Clothing Apparel Logo1.png" alt="">
+      <p class="addr">contact</p>
+      <br>
+    <div style="display: flex;"> <p class="addr">addreses:</p><p class="noaddr"> 572 ma'mora.street32.san francisco </p></div>
+    <div style="display: flex;">  <p class="addr">phone:</p><p class="noaddr"> +01211649852/+090541236584</p></div>
+    <div style="display: flex;">  <p class="addr">hours:</p><p class="noaddr">  10:00 - 18:00 mon-sat</p></div>
+      <br>
+      <p class="addr">follow us</p>
+      <div class="icons">
+          <i class='bx bxl-facebook' ></i>
+          <i class='bx bxl-twitter'></i>
+          <i class='bx bxl-instagram' ></i>
+          <i class='bx bxl-pinterest-alt' ></i>
+          <i class='bx bxl-youtube' ></i>
+          <i class='bx bxl-whatsapp' ></i>
+      </div>
+      </div>
+      <div>
+            <p class="addr">about</p>
+            <br>
+            <p class="noaddr">about us</p>
+            <p class="noaddr">delivery information</p>
+            <p class="noaddr">privacy policy </p>
+            <p class="noaddr">terms & condition</p>
+            <p class="noaddr">contact us</p>
+      </div>
+      <div>
+            <p class="addr">my account</p>
+            <br>
+            <p class="noaddr">sign in</p>
+            <p class="noaddr">view cart</p>
+            <p class="noaddr">my wisghlist </p>
+            <p class="noaddr">track my order </p>
+            <p class="noaddr">help</p>
+      </div>
+      <div>
+          <p class="addr">install app</p>
+          <br>
+          <p class="noaddr">from app store or google play</p>
+          <br>
+          <div>
+              <img class="installapp" src="img/pay/app.jpg" alt="">
+              <img class="installapp" src="img/pay/play.jpg" alt="">
+          </div>
+          <br>
+                    <p class="noaddr">secured payment gateways</p>
+                    <img style="cursor: pointer;" src="img/pay/pay.png" alt="">
+      </div>
+      </div>
+      <div class="copyright"><i class='bx bx-copyright' ></i> <p>Created by  <a href="https://github.com/HassanMahdy1">HassanMahDy</a></p></div>
+  </footer>
+</div>
+    <script src="changRoom.js" defer></script>
+</body>
+</html>
